@@ -1,0 +1,80 @@
+<style>
+  .click-button {
+    background-color: red; /* also accept rgb(255, 0, 0) */
+    color: white; /* text color */
+    border: none;
+    height: 36px;
+    width: 100px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px; /* margin means space outside the button in css */
+    transition: opacity 0.15s; /* transition is use to animate an element */
+    vertical-align: top; /* align the top vertically */
+  }
+
+  .click-button:hover {
+    /* hover is a pseudo-class */
+    /* background-color: green; */
+    opacity: 0.8; /* opacity is use to fade out an element [0,1] */
+  }
+
+  .click-button:active {
+    /* active is a pseudo-class */
+    background-color: blue;
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    /* height: 36px;
+    width: 62px;*/
+    border-radius: 2px;
+    cursor: pointer;
+    transition:
+      background-color 0.15s,
+      color 0.15s;
+    padding-left: 10px;
+    padding-right: 10px; /*padding means space instead the button between border and text*/
+    /* padding works as an alternative to width and height */
+    vertical-align: top;
+  }
+
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.8;
+  }
+
+  .tweet-button {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 62px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.3s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: h-shadow v-shadow blur spread color */
+  }
+</style>
+<button class="click-button">Click me</button>
+<!-- class serves as a selector for the button element -->
+<button class="click-button">Kick me</button>
+
+<button class="join-button">Join us</button>
+
+<button class="tweet-button">Tweet</button>
