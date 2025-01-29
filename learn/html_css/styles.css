@@ -1,0 +1,32 @@
+.click-button {
+  background-color: red; /* also accept rgb(255, 0, 0) */
+  color: white; /* text color */
+  border: none;
+  height: 36px;
+  width: 100px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px; /* margin means space outside the button in css */
+  transition: opacity 0.15s; /* transition is use to animate an element */
+  vertical-align: top; /* align the top vertically */
+}
+
+.click-button:hover {
+  /* hover is a pseudo-class */
+  /* background-color: green; */
+  opacity: 0.8; /* opacity is use to fade out an element [0,1] */
+}
+
+.click-button:active {
+  /* active is a pseudo-class */
+  background-color: blue;
+}
+
+.text-box {
+  height: 36px;
+  width: 200px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 0 8px; /* padding means space inside the button in css */
+  font-size: 14px;
+}
